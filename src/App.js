@@ -50,14 +50,18 @@ class App extends Component {
     return (
       <div className="container">
         <div class="jumbotron">
-          <h1 class="display-4">Examinations from our API call</h1>
+          <h1 class="display-4">Covid-19</h1>
         </div>
-        <h2>Examination List</h2>
+        <br/>
+        <h2>Examination list</h2>
         <Examinations items={examinations} locationHandler = {(x) => this.fetchUrlLocation(x)} />
-        <h2>Examination By LocationId</h2>
+        <br/>
+        <h2>Examination by location</h2>
         <Examinations items={examinationByLocations}/>
-        <h2>Examination Aggregation by State</h2>
-        <ExaminationGraphic items={stats}/>                
+        <br/>
+        <h2>Examination aggregation by state</h2>
+        <ExaminationGraphic items={stats}/>   
+        <br/>             
       </div>
     );
   }

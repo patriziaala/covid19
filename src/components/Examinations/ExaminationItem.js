@@ -11,7 +11,7 @@ const ExaminationItem = (props) => {
         <tr>
             <td>{date}</td>
             <td>{id}</td>
-            <td> <button type="button" class="btn btn-light" onClick={locationHandler} data-toggle="tooltip" data-placement="right" title="Tooltip on right">{locationId}</button></td>
+            <td> <button type="button" class="btn btn-link" onClick={locationHandler} data-toggle="tooltip" data-placement="right" title="Filter by Location">{locationId}</button></td>
             <td>{result}</td>
          </tr>       
     );
